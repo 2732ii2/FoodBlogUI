@@ -65,10 +65,7 @@ export default function Home() {
         // width={"100%"}
         // justifyContent={"space-between"}
       >
-        <Box
-          id="insideleft"
-          
-        >
+        <Box id="insideleft">
           {" "}
           <Image
             src={logo}
@@ -76,12 +73,7 @@ export default function Home() {
             height={83}
             alt="Picture of the author"
           />
-          <Heading id="heading"
-
-            
-          >
-            Discover the Best Food and Drinks
-          </Heading>
+          <Heading id="heading">Discover the Best Food and Drinks</Heading>
           <p
             style={{
               width: "345px",
@@ -119,11 +111,9 @@ export default function Home() {
           position={"relative"}
           alignContent={"start"}
         >
-          
-          <div id='slit'
-            
-          >
-            <Image id='slitimg'
+          <div id="slit">
+            <Image
+              id="slitimg"
               src={locl1}
               style={{ width: "95%", height: "98%", objectFit: "cover" }}
               // height={83}
@@ -141,7 +131,8 @@ export default function Home() {
               justifyContent: "end",
             }}
           >
-            <svg id='imgsvg'
+            <svg
+              id="imgsvg"
               widths={"100%"}
               xmlns="http://www.w3.org/2000/svg"
               height={"100%"}
@@ -158,7 +149,7 @@ export default function Home() {
       </Flex>
 
       <Flex
-      id="about_us"
+        id="about_us"
         width={"100%"}
         height={"65vh"}
         mt={35}
@@ -166,8 +157,8 @@ export default function Home() {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <div id="ab_block"
-
+        <div
+          id="ab_block"
           style={{
             width: "100%",
             height: "80%",
@@ -180,13 +171,15 @@ export default function Home() {
               "linear-gradient(90deg, rgba(30, 42, 93, 0.04) 30.91%, rgba(48, 62, 130, 0.04) 64.79%, rgba(60, 80, 157, 0.04) 91.94%)",
           }}
         >
-          <Image id='img_abs'
+          <Image
+            id="img_abs"
             src={phrama}
             style={{ width: "25%", height: "100%", objectFit: "cover" }}
             // height={83}
             alt="Picture of the author"
           />
-          <Flex id='flex_abs'
+          <Flex
+            id="flex_abs"
             flexDirection={"column"}
             alignItems={"start"}
             overflow={"hidden"}
@@ -194,17 +187,20 @@ export default function Home() {
             height={"70%"}
             // border={"1px solid black"}
           >
-            <Heading id='head_abs' fontSize={45} fontWeight={600}>
+            <Heading id="head_abs" fontSize={45} fontWeight={600}>
               About US
             </Heading>
-            <p id='p_abs' style={{ width: "350px", fontSize: "15px", fontWeight: "400" }}>
+            <p
+              id="p_abs"
+              style={{ width: "350px", fontSize: "15px", fontWeight: "400" }}
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. t has survived
               not only five centuries.
             </p>
-            <Button 
+            <Button
               bg={"#E23744"}
               color={"#FFF"}
               minWidth={140}
@@ -219,20 +215,23 @@ export default function Home() {
           </Flex>
         </div>
       </Flex>
-      <Flex width={"100%"} height={"90vh"} flexDirection={"column"}>
+      <Flex
+        width={"100%"}
+        height={"90vh"}
+        id="lastsecond"
+        overflow={"hidden"}
+        flexDirection={"column"}
+      >
         <Heading
-          fontFamily={"'Source Sans 3', sans-serif"}
-          fontSize={56}
-          fontWeight={600}
-          letterSpacing={2.2}
-          color={"#0E2368"}
-          ml={20}
+          id="ls_head"
+
           // border={"1px solid black"}
           // width={390}
         >
           Latest Articles
         </Heading>
         <div
+          id="top_ls_head"
           style={{
             width: "100%",
             height: "75%",
@@ -256,6 +255,7 @@ export default function Home() {
             }}
           >
             <div
+              id="inside_ls"
               style={{
                 minWidth: "90%",
                 width: "80%",
@@ -271,18 +271,7 @@ export default function Home() {
             >
               {list_1.map((e, i) => {
                 return (
-                  <div
-                    style={{
-                      width: "30%",
-                      height: "90%",
-                      borderRadius: "20px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      border: " 1.37px solid rgba(147, 162, 211, 0.38)",
-                    }}
-                    key={i}
-                  >
+                  <div id="ls_inside_div" key={i}>
                     <Image
                       src={e.img_url}
                       style={{
@@ -337,6 +326,7 @@ export default function Home() {
                       }}
                     >
                       <Button
+                        id="read_btn"
                         color={"#424961"}
                         width={131}
                         height={42}
@@ -363,6 +353,7 @@ export default function Home() {
             }}
           >
             <div
+              id="inside_ls"
               style={{
                 minWidth: "90%",
                 width: "80%",
@@ -376,15 +367,16 @@ export default function Home() {
               {list_2.map((e, i) => {
                 return (
                   <div
-                    style={{
-                      width: "30%",
-                      height: "90%",
-                      borderRadius: "20px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      border: " 1.37px solid rgba(147, 162, 211, 0.38)",
-                    }}
+                    id="ls_inside_div"
+                    // style={{
+                    //   width: "30%",
+                    //   height: "90%",
+                    //   borderRadius: "20px",
+                    //   display: "flex",
+                    //   flexDirection: "column",
+                    //   alignItems: "center",
+                    //   border: " 1.37px solid rgba(147, 162, 211, 0.38)",
+                    // }}
                     key={i}
                   >
                     <Image
@@ -440,7 +432,7 @@ export default function Home() {
                         marginTop: "5px",
                       }}
                     >
-                      <Button
+                      <Button id='read_btn'
                         color={"#424961"}
                         width={131}
                         height={42}
@@ -503,7 +495,9 @@ export default function Home() {
       </Flex>
 
       <Flex
+        id="last_d"
         width={"100%"}
+        overflow={"hidden"}
         height={"50vh"}
         justifyContent={"space-evenly"}
         alignItems={"center"}
