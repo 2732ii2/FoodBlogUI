@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+ 
+}
+
+.hello{
+  /* background:red ; */
+    height: 100vh;
+    /* border: 1px solid red; */
+    max-width:100%;
+     overflow: hidden;
+    justify-content: space-between;
+    
+}
+#heading
+{
+  font-family:"'Source Sans 3', sans-serif";
+            font-size:62px;
+            font-weight: 700;
+            color:#0E2368;
+            margin-top: 40px;
+
+            /* style={{ marginTop: "22%" }} */
+            /* // border={"1px solid black"} */
+            width:390px;
+          }
+  #insideleft {
+    width:45%;
+     height:100%;
+     /* background-color: red; */
+    padding-left:40px;
+    padding-top:40px;
+    }
+#slit{
+  width: 95%;
+  min-width: 95%;
+  height: 100%;
+  display:flex;
+  justify-content: end;
+  /* background: red; */
+}
+@media (max-width:600px) {
+  .hello{
+  /* background: ; */
+    flex-direction: column-reverse;
+    height: 150vh;
+    /* border: 1px solid red; */
+}
+  #insideright{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 65vh;
+  }
+   #insideleft{
+    padding-top: 50px;
+    width: 100%;
+    padding-left: none;
+    /* margin-top: -200px; */
+    height: 80vh;
+    /* border: 1px solid black; */
+   }
+  #slit{
+    min-width: 100%;
+    height: 90%;
+    /* border: 1px solid black; */
+
+  }
+
+  #slitimg{
+    /* border: 1px solid black; */
+    min-width: 100%;
+  }
+
+  #imgsvg{
+    height: 100%;
+    margin-top: -20px;
+    object-fit: cover;
+    width: 100%;
+
+  }
+  #insideleft{
+   align-items: center;
+   padding: none;
+   /* border: 1px solid red; */
+   
+  }
+  #heading{
+    font-size: 36px;
+  }
+  #about_us{
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    height: 80vh;
+   /* border: 1px solid red; */
+  }
+  #ab_block{
+    flex-direction: column;
+    /* height: 80vh; */
+   /* border: 1px solid red; */
+   min-height: 100%;
+   padding-top: 80px;
+   padding-bottom: 80px;
+  }
+  #img_abs{
+    display: none;
+  }
+  #flex_abs{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  #p_abs{
+    font-size: 14px;
+    max-width: 80%;
+  }
+}
